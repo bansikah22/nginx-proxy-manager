@@ -1,0 +1,1 @@
+https://github.com/ChristianLempa/videos/tree/main/nginxproxymanager-tutorial
