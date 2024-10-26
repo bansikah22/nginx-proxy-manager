@@ -33,6 +33,11 @@ Default credentials:
 ```bash
 Email:    admin@example.com
 Password: changeme
+
+##add user to docker group
+sudo usermod -aG docker <your_username>
+sudo usermod -aG docker $USER
+
 ```
 [Nginx-proxy-manger site](https://nginxproxymanager.com/)
 
