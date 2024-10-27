@@ -1,6 +1,6 @@
 ## set up multipass
 ```bash
-multipass launch --name cilium-kind --cpus 4 --mem 4G --disk 20G
+multipass launch --name cilium-kind --cpus 4 --memory 4G --disk 20G
 ```
 ## Install docker or will use ansible script
 ```bash
