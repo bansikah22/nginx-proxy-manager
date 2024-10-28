@@ -17,6 +17,16 @@
 5. Export kubeconfig:
    `kind export kubeconfig --name my-cluster`
 
+6 Stop kind cluster
+```bash
+docker stop $(docker ps -q --filter name=kind-)
+kind get clusters
+kubectl cluster-info --context kind-<cluster-name>
+docker start $(docker ps -aq --filter name=kind-)
+kind delete cluster --name <cluster-name>
+kind create cluster --name <cluster-name>
+```
+
 ## Kubernetes Commands for Kind Clusters
 
 1. Get nodes in the cluster:
